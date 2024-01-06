@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Formatação de Textos</title>
+
+    <style>
+        mark {
+
+            background-color: lime;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <!--***UMA FORMA RÁPIDA DE COLOCAR AS TAGS É SELECIONAR O TRECHO QUE DESEJA MODIFICAR COM A TAG, E UTILIZANDO O ATALHO CTRL+SHIFT+P E DEPOIS 'ENTER' NA OPÇÃO QUE PROVAVELMENTE JA VAI ESTAR MARCADA (POIS ESTARÁ NOS RECOMENDADOS) É SÓ COLOCAR O NOME DA TAG DESEJADA E APERTAR 'ENTER'***-->
+    
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2> <!--TANTO O NEGRITO QUANTO O ITÁLICO NÃO SÃO TERMOS 'CORRETOS' PARA USAR NO HTML, POIS SÃO FUNÇOES DE FORMA, E ISSO JÁ É CSS / O TERMO CORRETO É 'ELEMENTO DE IMPORTÂNCIA' (NEGRITO NA FORMA) E 'ELEMENTO DE DESTAQUE' (ITÁLICO NA FORMA) POIS PRA CADA UM, EXISTE DUAS TAGS PARA INDICAR A MESMA COISA, PORÉM UMA SÓ É SEMÂNTICAMENTE CORRETA PARA O HTML-->
+
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag b (não semantico).</p> <!--essa tag 'b' é antiga e não recomendada para destaque em negrito-->
+    <p>nessa frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semantico).</p>
+    <!--essa tag 'strong' é nova e recomendada para fazer o negrito-->
+
+    <h2>Itálico / Enfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag I (não semantico).</p>
+    <!--a tag "i" não é recomendada para marcar em itálico-->
+    <p>Nesta frase, temos um <em>termo em enfase</em> a tag EM (semantica)  </p>
+    <!--a tag "em" é a recomennndada para marcar em itálico-->
+
+    <h2>Texto marcado</h2>
+    <p>podemos criar também <mark style="background-color: lime;">um texto marcado</mark> usando a tag MARK</p>
+    <!--a forma de marcar é colocando a tag <mark>, e o trecho será marcado com uma cor padrão que é o amarelo.
+        
+        Caso queira mudar a COR de uma marcação específica (QUE É FORMA, ENTÃO É CSS), deve-se colcoar a tag 'style' dentro da tag <mark> e colocar "background-color:" e selecionar a cor desejada.
+        PORÉM, DESSE JEITO SÓ IRÁ MODIFICAR A COR DESTA MESMA MARCAÇÃO E NÃO AS OUTRAS.
+        
+        Caso queira mudar a COR de TODAS AS MARCAÇÕES, o melhor é ir na aba <head>, criar uma tag '<style>'
+        e lá colocar uma tag 'mark{ background-color:**cor desejada**}'-->
+
+    <p>e no outro paragrafo temos outro <mark>texto marcado no final.</mark></p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo</p>
+
+    <h2>Texto deletado</h2>
+    <p>podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido e não considerado</p>
+
+    <h2>Texto inserido</h2>
+    <p>podemos marcar um <ins>texto como inserido</ins> para dar um ênfase que ele foi adicionado</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <!--o "sup" é para formatar o texto para subir o trecho desejado (como em forma de uma potência matemática)-->
+
+    <h2>Texto subescrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    <!--o "sub" é para ABAIXAR o trecho desejado (como em uma fórmula molecular)-->
+</body>
+</html>

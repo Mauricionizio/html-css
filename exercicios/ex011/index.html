@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HMTL5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmenmte aumente e diminua o tamnho do seu navegador</p><!--quando for colocar imagens no site, tem que fazer varias imagens em tamanhos diferentes para varios tamanhos de telas-->
+
+    <picture><!--para fazer imagens dinamica precisa da tag "picture" e abaixo colocar o arquivo da imagem.
+    
+    a tag 'source:media:type' é para colocar a dinamica nas imagens, deve-se colocar entre parênteses o 'max-width' e selecionar os 'px' (pixels) da imagens principal e depois em 'srcset= **imagens menor do que a principal** e em 'type=image/**formato da imagem**. com essas informações ele vai calcular o tamanho máximo da tela do usuario quando abrir o site, se a tela do usuario for menor do que os pixels maximos colocados na tag da imagem principal, automaticamente ira abrir a segunda imagem do arquivo colocado no 'srcset='
+
+    OBS 01: A ORDEM DOS COMANDOS 'source:media:type' NO CÓDIGO, DEVE SER COLOCADOS DA IMAGEM MENOR PARA A MAIOR, DE CIMA PRA BAIXO (COMO UMA PIRAMIDE QUE O TOPO É MENOR ATÉ CHEGAR NA BASE QUE É A IMAGEM MAIOR)
+
+    OBS: É BOM COLCOAR UNS 50px A MAIS NO max-width PARA TER A DIFERENÇA DA DISTANCIA DA BORDA DA TELA COM A BARRA DE ROLAGEM QUE ESTA NO SITE-->
+
+
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+
+    <h1>Reproduzindo Áudio</h1> <!--para colocar o audio deve-se colocar o comando 'audio src=' e depois colocar o type= do arquivo (que pode ser mpeg, ogg, wav)
+    
+    o comando 'controls' é para aparecer a mini interface de reprodutor de audio no site-->
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/dohdedo.mp3" type="audio/mpeg"controls autoplay></audio>
+    <!-- MP3 WAV OGG-->
+
+
+</body>
+</html>

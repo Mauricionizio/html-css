@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+
+    <h2>Listas ordenadas</h2><!--a tag para criar lista ordenada é "ol" e depois coloca a tag "li" para listar -->
+    <ol type="i"> <!--tipo 1, A, a, I, i-->
+
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+
+    <ul type="square"> <!--tipo disc, circle e square-->
+        <li>pão</li>
+        <li>leite</li>
+        <li>tomate</li>
+        <li>manteiga</li>
+        <li>Arroz</li>
+        <li>Carne</li>
+    </ul>
+
+    <h2>Minhas linguagens antigas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>meus jogos favoritos</h2><!--SEMPRE QUE PRECISAR CRIAR UM LISTA DENTRO DE UMA LISTA, USA-SE A TAG "ol" NOVAMENTE DENTRO DA LISTA-->
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bross</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasi</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de definições</h2><!--"dl" para criar a lista de definição / dentro da lista usa a tag "dt" para o nome do termo e "dd" para a explicação do termo-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação de design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

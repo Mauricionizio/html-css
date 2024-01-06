@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+
+    <style> /* configurações globais das CSS / PARA TER EFEITO DEGRADE DE CORES, DEVE-SE COLOCAR O COMANDO 'background-image: linear-gradient ()' E DENTRO DOS PARENTESES ESCOLHER QUAL DIREÇÃO DO GRADIENTE:
+    
+    "to top" (para cima)
+    "to bottom" (para baixo)
+    "to right" (para a direita)
+    "to left" (para a esquerda)
+    
+    E DEPOIS ESCOLHER QUAIS AS CORES (NA ORDEM DESEJADA)*/ 
+        * {
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to bottom, #8103F9, #FB00D9, #FE1C27, #FD6708 90%, #FF9401);
+            background-attachment: fixed;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+</body>
+</html>

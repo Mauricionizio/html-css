@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+
+        /*:
+        '> p' é uma indicação que possui um 'p' dentro do meu 'div'
+        
+        
+        display: none; é para o elemento desejado ficar escondido
+        
+        ':hover' é uma pseudo-classe, cujo a finalidade é para quando o mouse passar por cima de algo acontecer alguma coisa
+        
+        'display: block'; é para aparecer aquilo que o display: none escondeu
+        -----------//-------------------//---------------------//--
+        O QUE ACONTECEU NESSE EXERCICIO??
+        
+        - FOI CRIADO UMA UMA TAG 'div' E DENTRO DESSA 'div' FOI COLOCADO UM PARÁGRAFO 'p'.
+        -ATÉ ENTAO TUDO TRANQUILO, OS DOIS ESTÃO APARECENDO NO SITE
+        -NA ABA HEAD DENTRO DO COMANDO 'style' FOI CRIADO UM SELETOR 'div' E USANDO O '> p' ESTOU MOSTRANDO QUE ESTOU REFERINDO AO ELEMENTO 'p'
+        -COLOCANDO DENTRO DO SELETOR O COMANDO 'display: none', O MEU ELEMENTO QUE ESTA SENDO INDICADO IRA FICAR ESCONDIDO (não sendo mostrado no site)
+        -ABRINDO UM NOVO SELETOR 'div:hover > p' ESTÁ INDICANDO QUE QUANDO O MOUSE PASSAR POR CIMA DO 'div', ALGO COM O ELEMENTO 'p' IRÁ ACONTECER
+        -DENTRO DO SELETOR COLOCANDO O COMANDO 'display: block;' O ELEMENTO 'p' IRÁ APARECER NOVAMENTE DE ACORDO COM AS CARACTERÍSTICAS COLOCADAS DENTRO DESTE SELETOR (COR, COR DE FUNDO, TAMANHO E ETC...)*/
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+
+    <p>Fim do exemplo.</p>
+</body>
+</html>

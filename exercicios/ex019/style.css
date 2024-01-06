@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*  
+O que em HTML é 'id',    em CSS é '#' (SÓ PODE TER UM 'id' POR ARQUIVO, É O CORRETO)
+O que em HTML é 'class', em CSS é '.' (PODE TER VÁRIOS 'class' POR ARQUIVO, E EM UM MESMO ELEMENTO PODE TER VARIOS 'class')
+
+
+OU SEJA, 'id' VEM DE IDENTIFICADOR E É PARA IDENTIFICAR ALGO EM ISOLADO
+NO ARQUIVO HTML COLOCA A TAG (Ex: h1, h2, h3, p...) E DEPOIS 'id=**nome desejado**, com isso, colocando a tag#**nome desejado** o css irá identificar o que quer ser modificado*/
+
+body {
+    background-color: rgb(216, 243, 190);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(33, 65, 0);
+}
+
+h1#principal {
+
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+h2 {
+    color: rgb(79, 122, 36);
+}
+
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: rgb(100, 100, 1);
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+
+background-color: rgba(100, 100, 4, 0.514);
+}

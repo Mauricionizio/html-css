@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    
+    <style> 
+    
+        /*
+        PSEUDO-CLASSES SÃO PALAVRAS (COMANDOS) QUE DEFINE ALGUM ESTADO OU AÇÃO DE UM ELEMENTO
+        
+        ':visited' É UM COMANDO PARA O ELEMENTO FICAR COM ALGUMA CARACTERISTICA QUANDO JA FOR CLICADO (em caso de link, quando ja for aberto uma vez)
+        
+        ':active' É UM COMANDO PARA O ELEMENTO FICAR COM ALGUMA CARACTERISTICA QUANDO ESTIVER COM O MOUSE CLICADO (o ato de clicar no elemento)
+
+        ':hover' É UM COMANDO PARA O ELEMENTO FICAR COM ALGUMA CARACTERISTICA QUANDO ESTIVER COM O MOUSE EM CIMA (sem estar clicado)
+
+        -----------//------------------------------------//---------------------------//-
+
+        PSEUDO-ELEMENTOS
+
+        '::after' É UM COMANDO QUE VAI COLOCAR ALGO DEPOIS DO ELEMENTO 
+        '::before' É UM COMANDO QUE VAI COLOCAR ALGO ANTES DO ELEMENTO
+        */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+        .especial::before {
+            content: ' ⇒ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial::after {
+            content: ' ⇐ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repertório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
+
+
+    </ul>
+</body>
+</html>

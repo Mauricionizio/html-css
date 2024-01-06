@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+
+}
+
+body { /* esse codigo é referente a pagina toda, entao ira modificar a pagina por inteiro
+    
+é um codigo de gradiente para a direita*/
+
+    background-image:linear-gradient(to right, #506266, #818274);
+}
+
+main { /* tudo que estiver dentro do seletor 'main' na pagina principal (cor03.html) será modificado aqui.
+
+background-color (cor do fundo)
+border-radius (bordas arredondadas)
+box-shadow (sombra da caixa)
+width (tamanho da 'box')
+padding (é a distancia entre o texto e a borda da box)
+margin (é o local onde essa box estara na página, neste caso do 'auto' a box irá se movimentar pela tela sempre centro no centro, independente do tamnho da tela)*/
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #181d1fa2;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+
+    color: #005C53;
+    text-align: center;
+    text-shadow: 1px 1px 2px #262e30ab;
+}
+
+h2 {
+    color: #506266;
+
+}
+p {
+    text-align: justify;
+}

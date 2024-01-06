@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style> /*colocando 'font-family:' irá aparecer a familia das fontes, normalmente irá aparecer tres tipos de fontes que são chamadas de font safe, pois pode ter algum navegador que não abra alguma determinada fonte, então tera algumas sugestões de fontes para abrir*/
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas absolutas
+            cm, mm, in(polegada), px, pt, pc
+
+            medidas relativas
+            em (medida relativa ao tamanho atual da fonte maiuscula)
+            ex (tamanho relativo a altura x da letra)
+            rm
+            vw e vh
+            %
+
+            O RECOMENDADO PARA MEDIDAS DE FONTES É USAR O 'px' E O 'em'
+            
+            16px É O TAMANHO PADRAO QUE OS NAVEGADORES COLOCAM DA FONTE*
+
+            16px GERALMENTE É IGUAL A 1em*/
+
+            font-size: 1em ;
+        }
+
+        h1 {
+            /* não são todas as fontes que possuem variações de formatação, tipo:
+            font-weight: (peso da fonte, ou seja, a grossura dela podendo ser: lighter, normal, bold, bolder)
+            font-style: (estilo da fonte)
+            
+            PARA NÃO PRECISAR ESCREVER TODOS ESSES CODIGOS EM LINHAS DIFERENTES, EXITE UMA MANEIRA DE ESCREVER EM APENAS UMA LINHA AS MODIFICAÇÕES QUE DESEJA
+            
+            USANDO O 'shorthand font´
+            COM ESSA FUNÇÃO, É POSSIVEL COLOCAR AS MODIFICAÇOES EM APENAS UMA LINHA E QUE DEVE-SE SEGUIR UMA ORDEM QUE É:
+            
+            font: font-style --> font-weight --> font-size --> font-family;
+            
+            apenas colocando 'font:' e colocar as modificações na ordem, automaticamente já será modificada
+            
+            OBS: NÃO SÃO TODAS AS FONTES QUE POSSUI TODOS ESSES TIPOS DE FORMATAÇÕES*/
+
+
+            font: italic bolder 3em 'work Sans', sans-serif;
+
+
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quibusdam recusandae excepturi, quisquam quos repellendus facere veritatis tempore laborum soluta pariatur earum vel, explicabo vitae eum possimus labore, consectetur nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aliquid ad blanditiis, quidem fuga itaque cupiditate quibusdam iste eos quia omnis hic laborum odio sunt sapiente unde molestiae ex dolor.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae alias consectetur cupiditate illo suscipit, velit labore iste consequatur tempore dignissimos vitae, et id temporibus. Perspiciatis veritatis corrupti aut omnis nulla.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, a eaque ullam, quod soluta fuga ipsa ex voluptate ipsum temporibus, suscipit repellat sunt ratione! Recusandae ipsa veniam sunt excepturi magnam!</p>
+</body>
+</html>

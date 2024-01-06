@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente.</h1><!--SEMPRE QUE FOR COLOCAR UM AUDIO OU UM VIDEO NO SITE, COLOQUE EM VARIOS FORMATOS DE ARQUIVO POIS NAO SE SABE EM QUAL NAVEGADOR O USUARIO IRÁ ACESSAR-->
+
+    <p>Este video está hospedado localmente no meu servidor.</p>
+
+    <video src="midia/meu-video.mp4" width="560" poster="imagens/pexels-batın-özen-16849867.jpg" controls> </video>
+    <!--ESTE EXEMPLO ESTÁ SOMENTE NO FORMATO MP4, POREM O MELHOR É COLOCAR VARIOS FORMATOS DE VIDEO / PARA MELHOR FICAR ORGANIZADO OS ARQUIVOS EM VARIOS FORMATOS (TANTO AUDIO QUANTO VIDEO), USA-SE O COMANDO 'video' e apague a tag src=, e em baixo crie a tag source src=**arquivo de midia** type=**formato do arquivo** para cada um dos arquivos na ordem que o programador deseja que seja testato no navegador para abrir
+    OBS: CASO O TAMNHO DO VIDEO NA TELA FIQUE MUITO GRANDE, TEM COMO ESCOLHER O TAMNHO COLOCANDO A TAG 'width=**tamanho que deseja** dentro do comando 'video'
+
+se quiser colocar uma imagem de thumb no video coloque a tag 'poster=' e selecione a imagem-->
+
+<h1>inserindo videos do youtube</h1><!--DESSA MANEIRA O VIDEO NAO PESA NO SERVIDOR INTERNO, MAS SIM NO YOUTUBE
+
+SÓ IR NO VIDEO DO YOUTUBE NECESSARIO COLOCAR PRA COMPARTILHAR E ESCOLHER A OPÇÃO INSERIR -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B4wntPyhv6g?si=1xZZCV-y0m7Ebnd5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>
